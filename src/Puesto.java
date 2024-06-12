@@ -19,3 +19,4 @@ public class Puesto {
         this.carro = carro;
     }
 }
+
