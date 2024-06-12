@@ -4,7 +4,6 @@ public class Puesto {
 
     public Puesto(int numero) {
         this.numero = numero;
-        this.carro = null;
     }
 
     public int getNumero() {
@@ -15,15 +14,15 @@ public class Puesto {
         return carro;
     }
 
-    public void setCarro(Carro carro) {
+    public void parquearCarro(Carro carro) {
         this.carro = carro;
+    }
+
+    public void sacarCarro() {
+        this.carro = null;
     }
 
     public boolean estaOcupado() {
         return carro != null;
-    }
-
-    public void desocupar() {
-        this.carro = null;
     }
 }
