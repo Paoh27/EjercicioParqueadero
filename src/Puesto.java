@@ -18,5 +18,12 @@ public class Puesto {
     public void setCarro(Carro carro) {
         this.carro = carro;
     }
-}
 
+    public boolean estaOcupado() {
+        return carro != null;
+    }
+
+    public void desocupar() {
+        this.carro = null;
+    }
+}
