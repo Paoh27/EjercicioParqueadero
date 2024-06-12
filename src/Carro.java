@@ -1,10 +1,8 @@
-import java.time.LocalTime;
-
 public class Carro {
     private String placa;
-    private LocalTime horaEntrada;
+    private int horaEntrada;
 
-    public Carro(String placa, LocalTime horaEntrada) {
+    public Carro(String placa, int horaEntrada) {
         this.placa = placa;
         this.horaEntrada = horaEntrada;
     }
@@ -13,7 +11,7 @@ public class Carro {
         return placa;
     }
 
-    public LocalTime getHoraEntrada() {
+    public int getHoraEntrada() {
         return horaEntrada;
     }
 }
